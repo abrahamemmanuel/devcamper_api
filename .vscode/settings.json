@@ -3,5 +3,6 @@
   
     "configurations": [],
     "compounds": []
-  }
+  },
+  "editor.formatOnSave": true
 }
