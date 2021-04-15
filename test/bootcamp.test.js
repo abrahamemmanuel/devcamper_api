@@ -6,7 +6,7 @@ const app = require("../server");
 //Setup Data
 const bootcamps = [
   {
-    name: "LIFE",
+    name: "GAME",
     description: "Is coding your passion? Codemasters will give you the skills and the tools to become the best developer possible. We specialize in front end and full stack web development",
     website: "https://devcentral.com",
     phone: "(444) 444-4444",
@@ -21,7 +21,7 @@ const bootcamps = [
   },
 
   {
-    name: "TEST BOOTCAMP",
+    name: "TEST GAME",
     description: "Is coding your passion? Codemasters will give you the skills and the tools to become the best developer possible. We specialize in front end and full stack web development",
     website: "https://devcentral.com",
     phone: "(444) 444-4444",
@@ -38,7 +38,7 @@ const bootcamps = [
 
 
   describe('Test Suite for Bootcamp CRUD functionality', () => {
-    //Tear down DB before test
+  //   //Tear down DB before test
     beforeEach( (done) => {
       Bootcamp.deleteMany({}, (err) => {
      });
@@ -64,7 +64,7 @@ const bootcamps = [
    describe('/GET/:id bootcamp', () => {
      it('should fetch a single bootcamp from db by ID', (done) => {
         let bootcamp = new Bootcamp({
-          name: "LIFE",
+          name: "LOVE",
           description: "Is coding your passion? Codemasters will give you the skills and the tools to become the best developer possible. We specialize in front end and full stack web development",
           website: "https://devcentral.com",
           phone: "(444) 444-4444",
