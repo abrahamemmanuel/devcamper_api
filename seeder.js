@@ -26,7 +26,7 @@ const courses = JSON.parse(fs.readFileSync(`${__dirname}/database/_data/courses.
 const importData = async () => {
   try {
     await Bootcamp.create(bootcamps);
-    // await Course.create(courses);
+    await Course.create(courses);
     console.log('Data Imported...'.green.inverse);
     process.exit();
   } catch (err) {
